@@ -119,14 +119,17 @@ def hash(s):
     return acrypt(string="AAAAAAAAAA", key=s)
 
 
-string = "Sunset is the time of day when our sky meets the outer space solar winds. There are blue, pink, and purple swirls, spinning and twisting, like clouds of balloons caught in a blender. The sun moves slowly to hide behind the line of horizon, while the moon races to take its place in prominence atop the night sky. People slow to a crawl, entranced, fully forgetting the deeds that still must be done. There is a coolness, a calmness, when the sun does set."
-key = "U(*u1sd98u898as8dj9238j9238dj(A*SJd98j3s"
 
-print('Original:\n', string, '\n')
-print('Original in hex:\n', binArrToHexStr(strToBinArr(string)), '\n')
-a = acrypt(string, key)
-print('Encrypted hex:\n', a, '\n')
-print('Decrypted:\n', acrypt(a, key, decrypt=True), '\n')
+if __name__ == "__main__":
+    
+    string = "Sunset is the time of day when our sky meets the outer space solar winds. There are blue, pink, and purple swirls, spinning and twisting, like clouds of balloons caught in a blender. The sun moves slowly to hide behind the line of horizon, while the moon races to take its place in prominence atop the night sky. People slow to a crawl, entranced, fully forgetting the deeds that still must be done. There is a coolness, a calmness, when the sun does set."
+    key = "U(*u1sd98u898as8dj9238j9238dj(A*SJd98j3s"
+
+    print('Original:\n', string, '\n')
+    print('Original in hex:\n', binArrToHexStr(strToBinArr(string)), '\n')
+    a = acrypt(string, key)
+    print('Encrypted hex:\n', a, '\n')
+    print('Decrypted:\n', acrypt(a, key, decrypt=True), '\n')
 
 
-print("Hashed: \n", hash(string))
+    print("Hashed: \n", hash(string))
