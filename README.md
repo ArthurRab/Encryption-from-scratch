@@ -6,4 +6,4 @@ The main property I was trying to achieve was that if you have E(text, key) and 
 
 
 Hashing here is implemented as H(text) = E('AAAAAAAAA', text)
-Basically, we use the encryption algorithm, but put in the string we want to has as the key instead of the input. Thus since we use a constant as the string we are "encrypting", then we get an output of constant size, which also changes completely when the input string is changed even slightly.
+Basically, we use the encryption algorithm, but put in the string we want to hash as the key instead of the input. Thus, since we use a constant as the string we are "encrypting", we get an output of constant size, which also changes completely when the input string is changed even slightly.
